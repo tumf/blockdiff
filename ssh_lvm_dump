@@ -1,6 +1,9 @@
 #! /bin/sh
 
-SS_NAME="lvm_dump"
+if [ ! "$SS_NAME" ] ; then
+    SS_NAME="lvm_dump"
+fi
+
 if [ ! "$BLOCKSIZE" ] ; then
     export BLOCKSIZE=1048576
 fi
